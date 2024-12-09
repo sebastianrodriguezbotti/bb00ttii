@@ -1,0 +1,257 @@
+/* CSS PRINCIPAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* TODO LO QUE VA DENTRO DE LA BARRA NEGRA - EMPIEZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  */
+/* BARRA NEGRA (CAMBIAR) */
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 25px 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ESTILO TITULO "Botti" */
+.artist-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.artist-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTENDEDOR TITULO Y MENU - ESTILO DE LAS PALABRAS DE LA BARRA NEGRA */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu-item {
+    margin: 0 20px;
+}
+
+nav .menu-item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    align-items: right;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url('imagenes/bannerdefinitivo.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    text-align: center; 
+    padding: 30%; 
+  }
+
+/* PORTAFOLIO */
+/* GRILLA DE FOTOS */
+
+#portafolio {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* COLUMNAS DEL MISMO ANCHO */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* SOBRE MIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  */
+/* CONTENEDOR DE TEXTO */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.text-container {
+    width: 55%;
+    padding-right: 20px;
+}
+
+
+.text-container p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* FOTO */
+#yo {
+
+    padding-left: 30%;
+    flex: 50%;
+    max-width: 75%;
+
+}
+
+/* TEXTO "sobre mi" */
+#text1 {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 150px;
+    font-size: 1.5em;
+    
+}
+
+
+/* TITULOS */
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+
+
+/* CONTACTO */
+#contacto {
+    color: #ffffff;
+}
+
+/* tamaño imagenes de redes sociales*/
+#contacto img {      
+    width: 40px;
+    height: 40px;
+}
+
+/* zona de contacto "caja" */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact-info {
+    margin-right: 60px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-info img {
+    margin-right: 8px;
+    width: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form input {
+    height: 40px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
